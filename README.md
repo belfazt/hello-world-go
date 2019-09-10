@@ -13,3 +13,13 @@ go build
 ```sh
 go run main.go
 ```
+
+### Dockerized
+
+```sh
+docker build . -t hello-world-go
+```
+
+```sh
+docker run -it -p 8080:8080 --rm --name my-running-hellow-world-app hello-world-go
+```
